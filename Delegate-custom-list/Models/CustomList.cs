@@ -66,8 +66,19 @@
             }
             return foundElements;
         }
-
+        public bool Contains(T item)
+        {
+            foreach (var el in _list)
+            {
+                if (el.Equals(item))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
+}
 }
 
 
